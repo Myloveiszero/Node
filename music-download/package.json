@@ -1,0 +1,15 @@
+{
+  "name": "music-download",
+  "version": "1.0.0",
+  "description": "1.  node index.js keywords, 拿到keywords\r     node 启动一个文件 启动进程\r     keywords 传递给进程 keywords 直接从process 获取\r 2.  搜索 发送请求\r browser: ajax - fetch XmlhttpRequest\r node: 爬虫 流 - node 原生的 api  http.get()\r 封装的库： axios request\r 3.  展示 支持 上下键选择\r 4.  回车下载",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "inquirer": "^7.1.0"
+  }
+}
