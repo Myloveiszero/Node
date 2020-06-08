@@ -1,0 +1,19 @@
+{
+  "name": "redux",
+  "version": "1.0.0",
+  "description": "```js\r let isLoading = true",
+  "main": "index.js",
+  "dependencies": {
+    "_js-tokens@4.0.0@js-tokens": "^4.0.0",
+    "_loose-envify@1.4.0@loose-envify": "^1.4.0",
+    "_redux@4.0.5@redux": "^4.0.5",
+    "_symbol-observable@1.2.0@symbol-observable": "^1.2.0",
+    "redux": "^4.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
