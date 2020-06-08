@@ -1,0 +1,2 @@
+```js
+let isLoading = true
