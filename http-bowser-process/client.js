@@ -19,14 +19,22 @@ class Xmlhttprequest {
     this.headers = headers;
   }
   parse(string) {
+<<<<<<< HEAD
     // 解析, 
+=======
+    // 解析
+>>>>>>> 1f9712bc4f538ebad7ff7982d258a4a2f2cb4542
     const lines = string.split('\r\n');
     console.log(lines);
     this.resStatusLine = lines[0];
     this.statusCode = this.resStatusLine.split(' ')[1];
     // [)
+<<<<<<< HEAD
     // splice() 数组
     this.resHeaders = lines.slice(1, lines.length - 2);
+=======
+    this.resHeaders = lines.slice(1, lines.length - 1);
+>>>>>>> 1f9712bc4f538ebad7ff7982d258a4a2f2cb4542
     this.response = lines[lines.length - 1];
   }
   send(body) {
@@ -42,7 +50,10 @@ class Xmlhttprequest {
       // 解析报文
       console.log('receive:', JSON.stringify(chunk.toString()));
       this.parse(chunk.toString());
+<<<<<<< HEAD
       // 才接受到数据 这里解析完才调用
+=======
+>>>>>>> 1f9712bc4f538ebad7ff7982d258a4a2f2cb4542
       this.onload();
     })
     client.on('end', () => {
@@ -57,7 +68,10 @@ xhr.open("POST", "/");
 xhr.setHeader({
   'Content-Type': 'application/json'
 })
+<<<<<<< HEAD
 // 回调： 数据加载回来 才会调用
+=======
+>>>>>>> 1f9712bc4f538ebad7ff7982d258a4a2f2cb4542
 xhr.onload = function() {
   // 
   console.log('接受到响应了');
