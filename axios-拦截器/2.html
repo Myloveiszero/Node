@@ -1,0 +1,26 @@
+<script>
+    let chains = [
+      () => {
+        console.log(1)
+        return {}
+      },
+      () => {
+        let xhr = new XMLHttpRequest();
+        console.log('axios 发出正式的请求')
+        return {code: 0}
+      },
+      (config) => {
+        console.log(2);
+        return {};
+      }
+    ]
+    let p = Promise.resolve();
+    while(chains.length) {
+      p = p.then(chains.shift());
+    }
+    // xhr
+    // xhr.send(请求体)
+    // node 
+    // xhr = xhr + node(http模块)  同构
+  </script>
+  
